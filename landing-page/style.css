@@ -323,11 +323,7 @@ div.icons {
 
   /* starting flex so I can place the next to each other */
   main {
-    width: 80%;
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: 1fr;
+    display: flex;
   }
 
   .scooter {
