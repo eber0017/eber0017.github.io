@@ -1,0 +1,353 @@
+/* default setting for mobile view with font family and colors based on the XD file  */
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 100%;
+}
+
+body {
+  background-color: #f7f7ff;
+  margin: 0;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* setting up all the fonts (size, weight, and line height) with sizes based on the XD file */
+
+h1 {
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.main-section-text p {
+  font-size: 24px;
+  line-height: 29px;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 40px;
+  margin: 0;
+}
+
+.main-section-form p:nth-child(1) {
+  font-size: 16px;
+  margin: 0;
+}
+
+.main-section-form p:nth-child(2) {
+  font-size: 14px;
+  line-height: 18px;
+  margin: 0;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+footer p {
+  font-size: 16px;
+}
+
+/* start styling the page with sizes based on the XD file */
+
+.logo {
+  width: 115px;
+  height: auto;
+}
+
+.scooter {
+  display: block;
+  width: 289.23px;
+  height: 211.53px;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* start styling form */
+
+.apply-form {
+  box-sizing: border-box;
+  border-radius: 25px;
+  width: 300px;
+  height: 495px;
+  background-color: white;
+  box-shadow: 5px 10px 15px grey;
+  padding: 20px;
+  margin-bottom: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#fname,
+#lname,
+#phone,
+#email {
+  border: none;
+  border-radius: 5px;
+  background-color: #f4f4f5;
+  padding: 7px;
+  font-size: 16px;
+}
+
+#email {
+  margin-bottom: 7px;
+}
+
+input[type="checkbox"] {
+  height: 20px;
+  width: 20px;
+}
+
+.agree {
+  margin: 10px 0;
+}
+
+/* styling drive with us button with sizes based on the XD file*/
+
+.drive {
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #57eeab;
+  border: none;
+  border-radius: 5px;
+  width: 250px;
+  height: 55px;
+  padding: 10px;
+}
+
+/* make it so only part of the test color changes to red */
+
+mark.red {
+  color: #ff8480;
+  background-color: white;
+}
+
+/* start to style the footer with sizes and colors based on the XD file*/
+
+footer {
+  box-sizing: border-box;
+  padding: 10px 30px 20px 30px;
+  margin: 0;
+  width: 100%;
+  background-color: #fffd8c;
+}
+
+/* start to style the footer form based on the XD file */
+
+.flex {
+  display: flex;
+}
+
+#hours,
+#city {
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+#hours {
+  width: 22%;
+  height: auto;
+  margin-right: 5px;
+}
+
+#city {
+  width: 73%;
+  height: auto;
+}
+
+/* styling calculate button */
+
+.calculate {
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  background-color: #ff8480;
+  border: none;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+div.icons {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Start styling for tablet view */
+@media (min-width: 475px) {
+
+  /* resizing font according to the XD file provided */
+
+  h1 {
+    font-weight: bold;
+    font-size: 80px;
+  }
+
+  .main-section-text p {
+    font-size: 24px;
+    line-height: 29px;
+
+  }
+
+  .main-section-form p:nth-child(1) {
+    font-size: 30px;
+    margin: 0;
+  }
+
+  .main-section-form p:nth-child(2) {
+    font-size: 17px;
+    line-height: 20px;
+    margin: 0;
+  }
+
+  /* resized scooter image based on XD file */
+
+  .scooter {
+    width: 420.64px;
+    height: 307.65px;
+    margin-bottom: 20px;
+  }
+
+
+  /* resized apply-form image based on XD file */
+
+  .apply-form {
+    box-sizing: border-box;
+    width: 605px;
+    height: 596px;
+  }
+
+  #fname,
+  #lname,
+  #phone,
+  #email {
+    width: 100%;
+    padding: 15px 0 15px 0;
+    font-size: 18px;
+  }
+
+  #email {
+    margin-bottom: 7px;
+  }
+
+  input[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+  }
+
+  .agree {
+    font-size: 20px;
+    margin: 10px 0;
+  }
+
+  /* resizing drive with us button with sizes based on the XD file*/
+
+  .drive {
+    font-size: 32px;
+    width: 525px;
+    height: 64px;
+    padding: 10px;
+  }
+
+  .apply-form p {
+    font-size: 17px;
+    text-align: center;
+  }
+
+  /* start to style the footer with sizes and colors based on the XD file*/
+
+  footer {
+    box-sizing: border-box;
+    padding: 10px 30px 20px 30px;
+    margin: 0;
+    width: 100%;
+    background-color: #fffd8c;
+  }
+
+  /* start to style the footer form based on the XD file */
+
+  .calculate-form {
+    display: flex;
+  }
+
+  #hours,
+  #city {
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  #hours {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+  }
+
+  #city {
+    width: 350px;
+    height: auto;
+  }
+
+  /* styling calculate button */
+
+  .calculate {
+    margin-left: 5px;
+    text-align: center;
+  }
+
+  div.icons {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+@media (min-width: 768px) {
+
+  .wrapper {
+    width: 80%;
+  }
+
+  /* starting flex so I can place the next to each other */
+  main {
+    width: 80%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr;
+  }
+
+  .scooter {
+    width: 819.36px;
+    height: 599.26px;
+    margin-bottom: 20px;
+  }
+
+
+  /* resized apply-form image based on XD file */
+
+  .apply-form {
+    width: 535px;
+    height: 590px;
+  }
+
+  .drive {
+    width: 452px;
+    height: 57px;
+  }
+
+
+}
