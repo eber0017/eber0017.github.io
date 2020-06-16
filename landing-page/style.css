@@ -182,7 +182,7 @@ div.icons {
 }
 
 /* Start styling for tablet view */
-@media (min-width: 475px) {
+@media (min-width: 600px) {
 
   /* resizing font according to the XD file provided */
 
@@ -308,7 +308,7 @@ div.icons {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 900px) {
 
   .wrapper {
     width: 80%;
@@ -343,4 +343,58 @@ div.icons {
     display: flex;
   }
 
+  .main-section-form,
+  .main-section-text {
+    flex: 1;
+  }
+
+  main div:nth-child(2) {
+    flex: 2;
+  }
+
+  footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+
+  h3 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  footer p {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .calculate-form {
+    grid-column: 1/2;
+    grid-row: 3/4;
+  }
+
+  #hours,
+  #city {
+    font-size: 14px;
+  }
+
+  #hours {
+    height: 20%;
+  }
+
+  #city {
+    height: 20%;
+  }
+
+  .calculate {
+    font-size: 20px;
+    height: 50%;
+  }
+
+  div.icons {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    width: 50%;
+    height: auto;
+  }
 }
