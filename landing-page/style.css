@@ -68,7 +68,7 @@ footer p {
   margin-right: auto;
 }
 
-/* start styling form */
+/* start styling form to match the XD file*/
 
 .apply-form {
   box-sizing: border-box;
@@ -309,6 +309,7 @@ div.icons {
 }
 
 @media (min-width: 900px) {
+  /* start styling for desktop view */
 
   .wrapper {
     width: 80%;
@@ -352,6 +353,8 @@ div.icons {
     flex: 2;
   }
 
+  /* added grid to footer so I can align items into the proper columns and rows */
+
   footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -372,6 +375,8 @@ div.icons {
     grid-column: 1/2;
     grid-row: 3/4;
   }
+
+  /* adjusted sizes of items in the calculate form so it matched the XD file */
 
   #hours,
   #city {
