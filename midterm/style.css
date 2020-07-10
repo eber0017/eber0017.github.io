@@ -40,6 +40,17 @@ h5 {
   font-weight: lighter;
 }
 
+h6 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+h7 {
+  font-size: 1.3rem;
+  font-weight: lighter;
+}
+
 p {
   font-size: 1rem;
   color: #3C3B3A;
@@ -320,7 +331,8 @@ Start Styling About Page
   padding: .5rem 1rem;
   border: none;
   border-radius: 15px;
-  width: 50% padding: .5rem;
+  width: 50%;
+  padding: .5rem;
 }
 
 /* Styling text after the newsletter section  */
@@ -372,6 +384,71 @@ Start Styling About Page
 }
 
 .contact-icons {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+/* Styling contact form so the colour and text match the XD file */
+
+.contact-form {
+  background-color: #26A682;
+  border-radius: 15px;
+  box-shadow: 5px 10px 15px #707070;
+  padding: 1.5rem 1rem;
+  color: #F2F2F2;
+  margin-bottom: 5rem;
+}
+
+.contact-form h6 {
+  margin-bottom: 1rem;
+}
+
+label {
+  margin-bottom: 1rem;
+}
+
+#fname,
+#snumber,
+#email,
+#message {
+  width: 95%;
+  border: none;
+  border-radius: 15px;
+  background-color: #f4f4f5;
+  padding: 10px;
+  margin-bottom: 1rem;
+}
+
+::placeholder {
+  color: rgba(60, 59, 58, .60);
+}
+
+textarea::placeholder {
+  color: rgba(60, 59, 58, .60);
+}
+
+/* Styling submit button */
+
+.submit {
+  background-color: #3C3B3A;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #F2F2F2;
+  text-align: center;
+  padding: .5rem 1rem;
+  border: none;
+  border-radius: 25px;
+  width: 100%;
+}
+
+/* Styling location section */
+
+.location p {
+  line-height: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+iframe {
   width: 100%;
 }
 
