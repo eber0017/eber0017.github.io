@@ -10,28 +10,28 @@
 </head>
 
 <body>
+  <!-- created a header section that will hold the logo and navigation bar -->
+  <!-- the header will also be linked to the "back to the top" link in the footer -->
+  <header id="top">
+    <img src="images/logo.svg" alt="logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index.html" class="home">Home</a></li>
+        <li><a href="about.html" class="about">About</a></li>
+        <li><a href="contact.html" class="current-page contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- divided main body into three sections: communicate, contact-form, and location -->
+  <!-- each section has its appropriate text, images, and buttons -->
   <div class="wrapper">
-    <!-- created a header section that will hold the logo and navigation bar -->
-    <!-- the header will also be linked to the "back to the top" link in the footer -->
-    <header id="top">
-      <img src="images/logo.svg" alt="logo">
-      <nav>
-        <ul>
-          <li><a href="index.html" class="home">Home</a></li>
-          <li><a href="about.html" class="about">About</a></li>
-          <li><a href="contact.html" class="current-page contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!-- divided main body into three sections: communicate, contact-form, and location -->
-    <!-- each section has its appropriate text, images, and buttons -->
     <div class="communicate">
       <h1>We Want to Hear From You</h1>
       <p>If you have an idea for an activity that you think you and your fellow students would love to participate in
         that we are not already offering, we want to know about it!</p>
     </div>
-    <div class="contact-icons">
-      <img src="images/contact-img.svg" alt="contact">
+    <div>
+      <img src="images/contact-img.svg" alt="contact" class="contact-icons">
     </div>
     <!-- created the contact form based on the XD file -->
     <div class="contact-form">
@@ -63,19 +63,23 @@
   </div>
   <!-- start coding footer, adding text, icons and back to top link -->
   <footer>
-    <h5>Follow Us</h5>
-    <picture>
+    <div class="follow-us">
+      <h5>Follow Us</h5>
+      <div class="social-media">
+        <img src="icons/facebook.svg" alt="facebook">
+        <img src="icons/instagram.svg" alt="instagram">
+        <img src="icons/twitter.svg" alt="twitter">
+        <img src="icons/youtube.svg" alt="youtube">
+      </div>
+    </div>
+    <picture class=top>
       <a href="#top">
-        <img src="icons/arrow.svg" alt="arrow">
-        <figcaption>back to top</figcaption>
+        <figure>
+          <img src="icons/arrow.svg" alt="arrow" class="arrow">
+          <figcaption>back to top</figcaption>
+        </figure>
       </a>
     </picture>
-    <div class="social-media">
-      <img src="icons/facebook.svg" alt="facebook">
-      <img src="icons/instagram.svg" alt="instagram">
-      <img src="icons/twitter.svg" alt="twitter">
-      <img src="icons/youtube.svg" alt="youtube">
-    </div>
   </footer>
 </body>
 

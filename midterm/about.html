@@ -10,54 +10,61 @@
 </head>
 
 <body>
+  <!-- created a header section that will hold the logo and navigation bar -->
+  <!-- the header will also be linked to the "back to the top" link in the footer -->
+  <header id="top">
+    <img src="images/logo.svg" alt="logo" class="logo">
+    <nav>
+      <ul>
+        <li><a href="index.html" class="home">Home</a></li>
+        <li><a href="about.html" class="current-page about">About</a></li>
+        <li><a href="contact.html" class="contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- divided main body into eight sections: construction, about, services, competitive-friends, newsletter, fitness, climbing, and thanks. -->
+  <!-- each section has its appropriate text, images, and buttons -->
   <div class="wrapper">
-    <!-- created a header section that will hold the logo and navigation bar -->
-    <!-- the header will also be linked to the "back to the top" link in the footer -->
-    <header id="top">
-      <img src="images/logo.svg" alt="logo">
-      <nav>
-        <ul>
-          <li><a href="index.html" class="home">Home</a></li>
-          <li><a href="about.html" class="current-page about">About</a></li>
-          <li><a href="contact.html" class="contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!-- divided main body into eight sections: construction, about, services, competitive-friends, newsletter, fitness, climbing, and thanks. -->
-    <!-- each section has its appropriate text, images, and buttons -->
     <div class="construction">
       <h1>What to expect during construction.</h1>
       <p>With construction starting in April 2019 we anticipate the new arrival of the ARC building as early as August
         2021.</p>
       <p>The current SA Fitness Zone and gym will be operating and open as usual. Please visit the Fitness Zone and the
         Gymnasium for more information on the hours, offerings, and pricing.</p>
-      <img src="images/construction.svg" alt="construction">
+
+      <img src="images/construction.svg" alt="construction" class="construction-img">
     </div>
-    <div class="about">
-      <div class="about-container">
-        <h1>About</h1>
-      </div>
-      <h2>Who</h2>
+  </div>
+  <div class="about">
+    <div class="about-container">
+      <h1>About</h1>
+    </div>
+    <div class="wrapper">
+      <h2 class="bold">Who</h2>
       <p>is ARC? We are the Athletics & Recreation Centre. This is an exciting venture for our Algonquin Community.
         This facility will provide our students with a place to break through perceptual barriers in a welcoming,
         safe, inclusive and inviting environment for students of all backgrounds, cultures and abilities to spark a
         movement.</p>
-      <h2>What</h2>
+      <h2 class="bold">What</h2>
       <p>is this going to cost me? This facility will be included in your activity fee. All fee-paying students can
         use and participate in all activities in the building. As for the facility, it will cost Algonquin College
         $48.8 million.</p>
-      <h2>Where</h2>
+      <h2 class="bold">Where</h2>
       <p>will the ARC building be? The ARC building will be located northeast of the Student Commons building,
         opposite of the residence. The facility will be an estimated 100,000 square feet! Connected to the Student
         Commons by a "Plus 15" Pedestrian Link. </p>
     </div>
-    <div class="services">
-      <div class="services-container">
-        <h1>Services</h1>
-      </div>
+  </div>
+  <div class="services">
+    <div class="services-container">
+      <h1>Services</h1>
+    </div>
+  </div>
+  <div class="wrapper">
+    <div class="restaurant">
       <picture>
         <source srcset="images/bar.jpg" media="(min-width:800px)">
-        <img src="images/bar.jpg" alt="bar">
+        <img src="images/bar.jpg" alt="bar" class="bar-img">
       </picture>
       <h2>Need a break?</h2>
       <h3>Restaurant & Lounge</h3>
@@ -66,25 +73,29 @@
         and dominate them in some pool. Pool, not your thing? Then come on downstairs and try out the new bowling
         lanes! </p>
     </div>
-    <div class="competitive-friends">
-      <picture>
-        <source srcset="images/bowling.jpg" media="(min-width:800px)">
-        <img src="images/bowling.jpg" alt="bowling">
-      </picture>
+  </div>
+  <div class="competitive-friends">
+    <picture>
+      <source srcset="images/bowling.jpg" media="(min-width:800px)">
+      <img src="images/bowling.jpg" alt="bowling" class="bowling-img">
+    </picture>
+    <div class="friends-container">
       <h2>Competitive Friends?</h2>
       <h3>Bowling Lanes</h3>
       <p>are finally here. Grab your friends and book a lane at the Students’ Association Bowling Lanes that will be
         part of the upcoming ARC! Don't like bowling? Well, look no further. Practice your swing no matter the weather
         on the Golf Simulator that will be located in the ARC building.</p>
     </div>
-    <div class="newsletter">
-      <p>Keep up to date with our news letter</p>
-      <button type="button">Subscribe</button>
-    </div>
+  </div>
+  <div class="newsletter">
+    <p>Keep up to date with our news letter</p>
+    <button type="button" class="subscribe">Subscribe</button>
+  </div>
+  <div class="wrapper">
     <div class="fitness">
       <picture>
         <source srcset="images/fitness.jpg" media="(min-width:800px)">
-        <img src="images/fitness.jpg" alt="fitness">
+        <img src="images/fitness.jpg" alt="fitness" class="fitness-img">
       </picture>
       <h2>New year, new me.</h2>
       <h3>Fitness rooms</h3>
@@ -93,40 +104,49 @@
         your endurance with inclines and declines that weave around fitness nods, the gymnasiums and the lounge area.
       </p>
     </div>
-    <div class="climbing">
-      <picture>
-        <source srcset="images/climbing.jpg">
-        <img src="images/climbing.jpg" alt="climbing">
-      </picture>
+  </div>
+  <div class="climbing">
+    <picture>
+      <source srcset="images/climbing.jpg">
+      <img src="images/climbing.jpg" alt="climbing" class="climbing-img">
+    </picture>
+    <div class="climbing-container">
       <h2>Indoor climbing?</h2>
       <h3>Rock climbing</h3>
-      <p>Test your strength and flexibility on the rock-climbing wall. Add some variety to your fitness routine, the ARC
+      <p>Test your strength and flexibility on the rock-climbing wall. Add some variety to your fitness routine, the
+        ARC
         will be able to offer more yoga and fitness classes to fit into your busy schedule. After a busy day of rock
         climbing or yoga, come and enjoy our new massage therapy area. </p>
     </div>
+  </div>
+  <div class="wrapper">
     <div class="thanks">
       <h1>Special thank you to the following</h1>
-      <img src="images/sa.png" alt="sa">
-      <img src="images/AC_ICON_FC_GRN_240x200.png" alt="ac">
-      <img src="images/pcl.png" alt="pcl">
-      <img src="images/cibc.png" alt="cibc">
+      <img src="images/sa.png" alt="sa" class="sa">
+      <img src="images/AC_ICON_FC_GRN_240x200.png" alt="ac" class="ac">
+      <img src="images/pcl.png" alt="pcl" class="pcl">
+      <img src="images/cibc.png" alt="cibc" class="cibc">
     </div>
 
   </div>
   <footer>
-    <h5>Follow Us</h5>
-    <picture>
+    <div class="follow-us">
+      <h5>Follow Us</h5>
+      <div class="social-media">
+        <img src="icons/facebook.svg" alt="facebook">
+        <img src="icons/instagram.svg" alt="instagram">
+        <img src="icons/twitter.svg" alt="twitter">
+        <img src="icons/youtube.svg" alt="youtube">
+      </div>
+    </div>
+    <picture class=top>
       <a href="#top">
-        <img src="icons/arrow.svg" alt="arrow">
-        <figcaption>back to top</figcaption>
+        <figure>
+          <img src="icons/arrow.svg" alt="arrow" class="arrow">
+          <figcaption>back to top</figcaption>
+        </figure>
       </a>
     </picture>
-    <div class="social-media">
-      <img src="icons/facebook.svg" alt="facebook">
-      <img src="icons/instagram.svg" alt="instagram">
-      <img src="icons/twitter.svg" alt="twitter">
-      <img src="icons/youtube.svg" alt="youtube">
-    </div>
   </footer>
 </body>
 

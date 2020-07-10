@@ -15,6 +15,7 @@ html {
 h1 {
   font-weight: bold;
   font-size: 2rem;
+  color: #3C3B3A;
 }
 
 h2 {
@@ -206,7 +207,178 @@ nav li a.current-page {
   height: auto;
 }
 
-/* Styling footer based off of XD file provided */
+/**************************
+Start Styling About Page 
+**************************/
+
+.construction-img {
+  width: 100%;
+  height: auto;
+}
+
+/*Making the about.jpg the background image for the about-container and centering the text*/
+
+.about {
+  margin-top: 1.5rem;
+}
+
+.about-container {
+  background-image: linear-gradient(rgba(38, 166, 130), rgba(38, 166, 130)),
+    url(images/about.jpg);
+  background-blend-mode: multiply;
+  background-position: 100%;
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 0;
+  margin: auto;
+  height: 50px;
+  text-align: center;
+}
+
+.about h1 {
+  color: #F2F2F2;
+  font-size: 3rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.bold {
+  font-weight: bold;
+  font-style: italic;
+}
+
+/*Making the services.jpg the background image for the about-container and centering the text*/
+
+.services-container {
+  background-image: linear-gradient(rgba(38, 166, 130), rgba(38, 166, 130)),
+    url(images/services.jpg);
+  background-blend-mode: multiply;
+  background-position: 100%;
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 0;
+  margin: auto;
+  height: 50px;
+  text-align: center;
+}
+
+.services h1 {
+  color: #F2F2F2;
+  font-size: 3rem;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* Hiding images for the mobile view */
+
+.bar-img,
+.bowling-img,
+.fitness-img,
+.climbing-img {
+  display: none;
+}
+
+/* Styling the rest of the text for the About page based on the XD file */
+
+.restaurant h2,
+.competitive-friends h2,
+.fitness h2,
+.climbing h2 {
+  font-weight: bold;
+}
+
+.competitive-friends {
+  background-color: #F2F2F2;
+  padding: 1.5rem 0;
+}
+
+.friends-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Styling newsletter section based on XD file */
+
+.newsletter {
+  background-color: #3C3B3A;
+  padding: 1rem;
+  text-align: center;
+}
+
+.newsletter p {
+  color: white;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.subscribe {
+  background-color: #26A682;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #F2F2F2;
+  text-align: center;
+  padding: .5rem 1rem;
+  border: none;
+  border-radius: 15px;
+  width: 50% padding: .5rem;
+}
+
+/* Styling text after the newsletter section  */
+
+.climbing {
+  background-color: #F2F2F2;
+  padding: 1.5rem 0;
+}
+
+.climbing-container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.thanks h1 {
+  padding-top: 2rem;
+  padding-bottom: 3rem;
+  font-size: 3rem;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/* Resizing and centering logos for the special thanks section based on the XD file */
+
+.sa {
+  width: 100%;
+  padding-bottom: 0.5rem;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.ac,
+.pcl,
+.cibc {
+  width: 50%;
+  padding-bottom: 1.5rem;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/*****************************
+ Start Styling Contact Page  
+ ********************************/
+
+.communicate h1 {
+  font-size: 2.5rem;
+}
+
+.contact-icons {
+  width: 100%;
+}
+
+/*****************************
+ Styling Footer 
+ based off of XD file provided 
+ ********************************/
 
 footer {
   clear: both;
