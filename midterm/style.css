@@ -122,11 +122,12 @@ nav li a.current-page {
   padding: 0;
 }
 
-.bowling-icon,
-.climbing-icon,
-.weight-icon,
-.basketball-icon {
-  width: 25%;
+.fa-bowling-ball,
+.fa-hiking,
+.fa-dumbbell,
+.fa-basketball-ball {
+  font-size: 2rem;
+  color: #3C3B3A;
   height: auto;
   margin-top: 1rem;
   margin-bottom: .5rem;
@@ -156,6 +157,10 @@ nav li a.current-page {
   margin-top: 2rem;
 }
 
+.scroll {
+  display: none;
+}
+
 .school {
   width: 100%;
   height: auto;
@@ -174,7 +179,8 @@ nav li a.current-page {
   padding: .5rem 1rem;
   border: none;
   border-radius: 15px;
-  width: 50% padding: .5rem;
+  width: 50%;
+  padding: .5rem;
   margin-top: 1.5rem;
   margin-bottom: 2rem;
   box-shadow: 5px 10px 15px #707070;
@@ -216,6 +222,46 @@ nav li a.current-page {
 .entertainment-img {
   width: 100%;
   height: auto;
+}
+
+/* Creating an animation for the fitness icons and logo*/
+
+@keyframes fade-in {
+  10% {
+    opacity: 0.1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.fa-bowling-ball,
+.fa-hiking,
+.fa-dumbbell,
+.fa-basketball-ball {
+  animation-name: fade-in;
+  animation-duration: 5s;
+  animation-iteration-count: 5;
+  animation-timing-function: ease-in-out;
+}
+
+.logo {
+  animation-name: stretch;
+  animation-duration: 5s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+
 }
 
 /**************************
@@ -397,14 +443,15 @@ Start Styling About Page
   padding: 1.5rem 1rem;
   color: #F2F2F2;
   margin-bottom: 5rem;
+  justify-content: center;
 }
 
 .contact-form h6 {
   margin-bottom: 1rem;
 }
 
-label {
-  margin-bottom: 1rem;
+label.label {
+  margin: 2rem 0;
 }
 
 #fname,
@@ -416,14 +463,14 @@ label {
   border-radius: 15px;
   background-color: #f4f4f5;
   padding: 10px;
-  margin-bottom: 1rem;
+  margin: 1rem 0;
 }
 
 ::placeholder {
   color: rgba(60, 59, 58, .60);
 }
 
-textarea::placeholder {
+textarea {
   color: rgba(60, 59, 58, .60);
 }
 
@@ -431,6 +478,7 @@ textarea::placeholder {
 
 .submit {
   background-color: #3C3B3A;
+  box-shadow: 5px 10px 15px #707070;
   font-size: 1.5rem;
   font-weight: bold;
   color: #F2F2F2;
@@ -495,4 +543,204 @@ footer h5 {
 .top figcaption {
   margin-top: .5rem;
   text-align: center;
+}
+
+/***************
+******************
+Tablet View
+****************
+*****************/
+
+@media (min-width: 800px) {
+
+  /* Resizing main text based on XD file */
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  h6 {
+    font-size: 3rem;
+  }
+
+  h7 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  #top {
+    display: grid;
+    grid-template-columns: 25% 25% 50%;
+  }
+
+  /* Making nav bar sit next to logo horizontally */
+
+  nav {
+    grid-column: 3/4;
+    margin-top: 2.5rem;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  /***********************************
+   Styling Home page for Tablet View 
+   ***********************************/
+
+  .main h1 {
+    margin-top: 4rem;
+    font-size: 3rem;
+  }
+
+  .main p {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+
+  .fitness-icons {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .get-started {
+    width: 35%;
+    font-size: 2.5rem;
+    border-radius: 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .discover-img {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .scroll-arrow {
+    visibility: visible;
+    transform: rotate(180deg);
+  }
+
+  .learn-more {
+    border-radius: 25px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .profile {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .simon {
+    width: 35%;
+  }
+
+  /***********************************
+   Styling About page for Tablet View 
+   ***********************************/
+
+  .construction p {
+    margin: 3rem 0;
+  }
+
+  .construction-img {
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .newsletter {
+    display: grid;
+    grid-template-columns: 75% 25%;
+  }
+
+  .thanks h1 {
+    font-size: 2rem;
+  }
+
+  .sa {
+    width: 45%;
+  }
+
+  .ac,
+  .pcl,
+  .cibc {
+    width: 30%;
+  }
+
+  /************************************
+   Styling Contact Page for Tablet View  
+   **************************************/
+
+  .contact-icons {
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Resizing contact form based on XD file*/
+
+  .contact-form::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  label.label {
+    margin: 0 1rem;
+  }
+
+  #fname,
+  #snumber,
+  #email,
+  #message {
+    margin: 1rem;
+  }
+
+  .submit {
+    width: 25%;
+    float: right;
+  }
+
+  .location-text {
+    margin-top: 5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .location p {
+    line-height: 1rem;
+  }
+
+  /* Restyling footer based on XD file for tablet view */
+
+  footer {
+    display: grid;
+    grid-template-columns: 90% 10%;
+  }
+
+  .facebook,
+  .instagram,
+  .twitter,
+  .youtube {
+    margin: 0 0.2rem;
+  }
 }

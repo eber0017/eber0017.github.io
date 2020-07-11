@@ -8,6 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link
     href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+    integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
   <title>Midterm</title>
 </head>
 
@@ -32,19 +34,19 @@
       <p>With Algonquin College's newest facility, there's always something for everyone to discover and enjoy!</p>
       <div class="fitness-icons">
         <figure>
-          <img src="icons/bowling.svg" alt="bowling" class="bowling-icon">
+          <i class="fas fa-bowling-ball"></i>
           <figcaption>Bowling</figcaption>
         </figure>
         <figure>
-          <img src="icons/climb.svg" alt="rock-climbing" class="climbing-icon">
+          <i class="fas fa-hiking"></i>
           <figcaption>Rock Climbing</figcaption>
         </figure>
         <figure>
-          <img src="icons/gym.svg" alt="fitness-center" class="weight-icon">
+          <i class="fas fa-dumbbell"></i>
           <figcaption>Fitness Center</figcaption>
         </figure>
         <figure>
-          <img src="icons/basketball.svg" alt="indoor-court" class="basketball-icon">
+          <i class="fas fa-basketball-ball"></i>
           <figcaption>Indoor Court</figcaption>
         </figure>
       </div>
@@ -52,10 +54,14 @@
       <picture>
         <img src="images/discover.svg" alt="discover" class="discover-img">
       </picture>
+      <figure class="scroll">
+        <img src="icons/arrow.svg" alt="scroll-arrow" class="scroll-arrow">
+        <figcaption>scroll</figcaption>
+      </figure>
     </div>
   </div>
-
   <picture>
+    <source srcset="images/school_3008x650.jpg" media="(min-width: 800px)">
     <img src="images/school.jpg" alt="school" class="school">
   </picture>
   <div class="wrapper">
@@ -69,14 +75,21 @@
     </div>
   </div>
   <div class="profile">
-    <img src="images/simon.jpg" alt="simon" class="simon">
-    <h4>Dijanelle Simon</h4>
-    <h4>SA President</h4>
-    <p>"Only with increased capacity can we expand and create a more inclusive program that attracts a greater number
-      of students to participate in physical and social activity. The Students' Association is committed to and
-      focused on programming that results in our students taking person ownership for their health."</p>
+    <div>
+      <img src="images/simon.jpg" alt="simon" class="simon">
+      <h4>Dijanelle Simon</h4>
+      <h4>SA President</h4>
+    </div>
+    <div>
+      <p>"Only with increased capacity can we expand and create a more inclusive program that attracts a greater number
+        of students to participate in physical and social activity. The Students' Association is committed to and
+        focused on programming that results in our students taking person ownership for their health."</p>
+    </div>
   </div>
-  <img src="images/entertainment.jpg" alt="entertainment" class="entertainment-img">
+  <picture>
+    <source srcset="images/entertainment_5568x1386.jpg">
+    <img src="images/entertainment.jpg" alt="entertainment" class="entertainment-img">
+  </picture>
   <div class="wrapper">
     <div class="entertainment">
       <h2>Discover</h2>
@@ -92,10 +105,10 @@
     <div class="follow-us">
       <h5>Follow Us</h5>
       <div class="social-media">
-        <img src="icons/facebook.svg" alt="facebook">
-        <img src="icons/instagram.svg" alt="instagram">
-        <img src="icons/twitter.svg" alt="twitter">
-        <img src="icons/youtube.svg" alt="youtube">
+        <img src="icons/facebook.svg" alt="facebook" class="facebook">
+        <img src="icons/instagram.svg" alt="instagram" class="instagram">
+        <img src="icons/twitter.svg" alt="twitter" class="twitter">
+        <img src="icons/youtube.svg" alt="youtube" class="youtube">
       </div>
     </div>
     <picture class=top>
