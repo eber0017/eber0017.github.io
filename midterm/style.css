@@ -633,11 +633,17 @@ Tablet View
     margin-right: auto;
   }
 
+  .scroll {
+    align-items: center;
+    justify-items: center;
+  }
+
   .scroll-arrow {
     transform: rotate(180deg);
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 1rem;
   }
 
   .learn-more {
@@ -858,7 +864,8 @@ Desktop View
 
   .learn-more {
     padding: 0.5rem;
-    width: 35%;
+    width: 40%;
+    font-size: 1rem;
   }
 
   /* Styling the Profile section into a 3 column grid so the content sits next to each other */
@@ -868,6 +875,8 @@ Desktop View
     grid-template-columns: 15% 15% 70%;
     margin: 0;
     padding: 1rem;
+    align-items: center;
+    justify-items: center;
   }
 
   .simon {
@@ -882,6 +891,83 @@ Desktop View
 
   .profile-p {
     grid-column: 3/4;
+  }
+
+  /* Styling entertainment section so the contect sits in a two column grid */
+
+  .entertainment h2 {
+    margin: 0.5rem 0;
+  }
+
+  .entertainment h3 {
+    margin: 0.5rem 0;
+  }
+
+  .entertainment p {
+    margin: 0.5rem 0;
+  }
+
+  .entertainment-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding: 2rem;
+  }
+
+  .entertainment {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .entertainment-pic {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .entertainment-grid .learn-more {
+    width: 50%;
+    font-size: 1rem;
+  }
+
+  /*************************************
+  Styling Contact page for Desktop View 
+  **************************************/
+
+  /* Creating a 2 column grid so the top information and contact form sit next to each other */
+
+  .grid-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .communicate {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .contact-form {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 90%;
+  }
+
+  /* Creating a 2 column grid so the location information and map sit next to each other */
+
+  .location-sec {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .location {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  iframe {
+    grid-column: 2/3;
+    grid-row: 1/2;
   }
 
   /******************************

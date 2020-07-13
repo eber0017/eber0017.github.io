@@ -25,46 +25,50 @@
   <!-- divided main body into three sections: communicate, contact-form, and location -->
   <!-- each section has its appropriate text, images, and buttons -->
   <div class="wrapper">
-    <div class="communicate">
-      <h1>We Want to Hear From You</h1>
-      <p>If you have an idea for an activity that you think you and your fellow students would love to participate in
-        that we are not already offering, we want to know about it!</p>
-    </div>
-    <div>
-      <img src="images/contact-img.svg" alt="contact" class="contact-icons">
-    </div>
-    <!-- created the contact form based on the XD file -->
-    <div class="contact-form">
-      <form>
-        <h6>Contact us.</h6>
-        <label for="fname" class="label">Full Name</label><br>
-        <input type="text" id="fname" name="fname" placeholder="Full Name"><br>
-        <label for="snumber" class="label">Student Number</label><br>
-        <input type="text" id="snumber" name="snumber" placeholder="Student Number"><br>
-        <label for="email" class="label">Email</label><br>
-        <input type="text" id="email" name="email" placeholder="Email"><br>
-        <label for="message" class="label">Message</label>
-        <textarea name="messsage" id="message" cols="30" rows="10" placeholder="Message">Message</textarea><br>
-        <button type="button" class="submit">Submit<br>
-      </form>
-    </div>
-    <div class="location">
-      <h1>Our Location.</h1>
-      <h7>Algonquin College Students' Association</h7>
-      <div class="location-text">
-        <p>Monday to Friday – 8:30am to 6:00pm</p>
-        <p>1385 Woodroffe Avenue (E114)</p>
-        <p>Ottawa, Ontario</p>
-        <p> K2G 1V8</p>
-        <p> (613) 727-4723 x7711</p>
+    <div class="grid-1">
+      <div class="communicate">
+        <h1>We Want to Hear From You</h1>
+        <p>If you have an idea for an activity that you think you and your fellow students would love to participate in
+          that we are not already offering, we want to know about it!</p>
+        <div>
+          <img src="images/contact-img.svg" alt="contact" class="contact-icons">
+        </div>
+      </div>
+      <!-- created the contact form based on the XD file -->
+      <div class="contact-form">
+        <form>
+          <h6>Contact us.</h6>
+          <label for="fname" class="label">Full Name</label><br>
+          <input type="text" id="fname" name="fname" placeholder="Full Name"><br>
+          <label for="snumber" class="label">Student Number</label><br>
+          <input type="text" id="snumber" name="snumber" placeholder="Student Number"><br>
+          <label for="email" class="label">Email</label><br>
+          <input type="text" id="email" name="email" placeholder="Email"><br>
+          <label for="message" class="label">Message</label>
+          <textarea name="messsage" id="message" cols="30" rows="10" placeholder="Message">Message</textarea><br>
+          <button type="button" class="submit">Submit<br>
+        </form>
       </div>
     </div>
+    <div class="location-sec">
+      <div class="location">
+        <h1>Our Location.</h1>
+        <h7>Algonquin College Students' Association</h7>
+        <div class="location-text">
+          <p>Monday to Friday – 8:30am to 6:00pm</p>
+          <p>1385 Woodroffe Avenue (E114)</p>
+          <p>Ottawa, Ontario</p>
+          <p> K2G 1V8</p>
+          <p> (613) 727-4723 x7711</p>
+        </div>
+      </div>
+    </div>
+    <!-- embedded google maps with the college's location -->
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31731.17796337886!2d-75.75202996506461!3d45.33535877929238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce04540b77e3bb%3A0x9e246d934b6c6ed!2sAlgonquin%20College%20of%20Applied%20Arts%20and%20Technology!5e0!3m2!1sen!2sca!4v1593985089348!5m2!1sen!2sca"
+      width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+      tabindex="0"></iframe>
   </div>
-  <!-- embedded google maps with the college's location -->
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31731.17796337886!2d-75.75202996506461!3d45.33535877929238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce04540b77e3bb%3A0x9e246d934b6c6ed!2sAlgonquin%20College%20of%20Applied%20Arts%20and%20Technology!5e0!3m2!1sen!2sca!4v1593985089348!5m2!1sen!2sca"
-    width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-    tabindex="0"></iframe>
   <!-- start coding footer, adding text, icons and back to top link -->
   <footer>
     <div class="follow-us">
