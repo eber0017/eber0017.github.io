@@ -765,6 +765,10 @@ Desktop View
 
   /* Changing text size for Desktop View */
 
+  .wrapper {
+    width: 90%;
+  }
+
   h1 {
     font-size: 2rem;
   }
@@ -958,11 +962,16 @@ Desktop View
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+    padding: 1rem;
   }
 
   .location {
     grid-column: 1/2;
     grid-row: 1/2;
+  }
+
+  .location-text {
+    margin: 0.5rem 0;
   }
 
   iframe {
