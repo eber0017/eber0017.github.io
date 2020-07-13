@@ -164,10 +164,6 @@ nav li a.current-page {
   margin-right: auto;
 }
 
-.scroll {
-  display: none;
-}
-
 .school {
   width: 100%;
   height: auto;
@@ -532,11 +528,12 @@ footer h5 {
 }
 
 .arrow {
-  width: 150%;
+  width: 50%;
 }
 
 .top {
-  width: 10%;
+  width: 100%;
+  text-align: center;
 }
 
 .top figure {
@@ -637,8 +634,10 @@ Tablet View
   }
 
   .scroll-arrow {
-    visibility: visible;
     transform: rotate(180deg);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .learn-more {
@@ -764,6 +763,10 @@ Desktop View
     font-size: 2rem;
   }
 
+  h5 {
+    font-size: 1rem;
+  }
+
   p {
     font-size: 1rem;
   }
@@ -880,4 +883,13 @@ Desktop View
   .profile-p {
     grid-column: 3/4;
   }
+
+  /******************************
+  Styling Footer for Desktop View 
+  *********************************/
+
+  .arrow {
+    width: 75%
+  }
+
 }
