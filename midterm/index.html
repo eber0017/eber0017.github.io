@@ -30,41 +30,46 @@
   <!-- each section has its appropriate text, images, and buttons -->
   <div class="wrapper">
     <div class="main">
-      <h1>Discover Your</h1>
-      <p>With Algonquin College's newest facility, there's always something for everyone to discover and enjoy!</p>
-      <div class="fitness-icons">
-        <figure>
-          <i class="fas fa-bowling-ball"></i>
-          <figcaption>Bowling</figcaption>
-        </figure>
-        <figure>
-          <i class="fas fa-hiking"></i>
-          <figcaption>Rock Climbing</figcaption>
-        </figure>
-        <figure>
-          <i class="fas fa-dumbbell"></i>
-          <figcaption>Fitness Center</figcaption>
-        </figure>
-        <figure>
-          <i class="fas fa-basketball-ball"></i>
-          <figcaption>Indoor Court</figcaption>
-        </figure>
+      <div class="grid-left">
+        <h1>Discover Your</h1>
+        <p>With Algonquin College's newest facility, there's always something for everyone to discover and enjoy!</p>
+        <div class="fitness-icons">
+          <figure>
+            <i class="fas fa-bowling-ball"></i>
+            <figcaption>Bowling</figcaption>
+          </figure>
+          <figure>
+            <i class="fas fa-hiking"></i>
+            <figcaption>Rock Climbing</figcaption>
+          </figure>
+          <figure>
+            <i class="fas fa-dumbbell"></i>
+            <figcaption>Fitness Center</figcaption>
+          </figure>
+          <figure>
+            <i class="fas fa-basketball-ball"></i>
+            <figcaption>Indoor Court</figcaption>
+          </figure>
+        </div>
+        <button type="button" class="get-started">Get Started</button>
       </div>
-      <button type="button" class="get-started">Get Started</button>
-      <picture>
+      <picture class="grid-right">
         <img src="images/discover.svg" alt="discover" class="discover-img">
       </picture>
-      <figure class="scroll">
+      <figure class="scroll grid-bottom">
         <img src="icons/arrow.svg" alt="scroll-arrow" class="scroll-arrow">
         <figcaption>scroll</figcaption>
       </figure>
     </div>
   </div>
-  <picture>
-    <source srcset="images/school_3008x650.jpg" media="(min-width: 800px)">
-    <img src="images/school.jpg" alt="school" class="school">
-  </picture>
-  <div class="wrapper">
+  <div class="school-grid">
+    <div class="school-img">
+      <picture>
+        <source srcset="images/school.jpg" media="(min-width: 100px)">
+        <source srcset="images/school_3008x650.jpg" media="(min-width: 800px)">
+        <img src="images/school.jpg" alt="school" class="school">
+      </picture>
+    </div>
     <div class="discover">
       <h2>Discover</h2>
       <h3>Algonquin College</h3>
@@ -77,10 +82,12 @@
   <div class="profile">
     <div>
       <img src="images/simon.jpg" alt="simon" class="simon">
-      <h4>Dijanelle Simon</h4>
-      <h4>SA President</h4>
+      <div class="profile-head">
+        <h4>Dijanelle Simon</h4>
+        <h4>SA President</h4>
+      </div>
     </div>
-    <div>
+    <div class="profile-p">
       <p>"Only with increased capacity can we expand and create a more inclusive program that attracts a greater number
         of students to participate in physical and social activity. The Students' Association is committed to and
         focused on programming that results in our students taking person ownership for their health."</p>

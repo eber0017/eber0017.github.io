@@ -157,6 +157,13 @@ nav li a.current-page {
   margin-top: 2rem;
 }
 
+.discover {
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .scroll {
   display: none;
 }
@@ -602,11 +609,9 @@ Tablet View
 
   .main h1 {
     margin-top: 4rem;
-    font-size: 3rem;
   }
 
   .main p {
-    font-size: 1.5rem;
     line-height: 2.5rem;
   }
 
@@ -742,5 +747,137 @@ Tablet View
   .twitter,
   .youtube {
     margin: 0 0.2rem;
+  }
+}
+
+/***********
+************ 
+Desktop View 
+*************
+**************/
+
+@media (min-width: 1000px) {
+
+  /* Changing text size for Desktop View */
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  /* Resizing logo for desktop view */
+
+  .logo {
+    width: 20%;
+  }
+
+  /* Re-Styling nav bar for desktop view based on XD file */
+
+  nav {
+    margin-top: 1.2rem;
+  }
+
+  nav ul {
+    font-size: 1rem;
+  }
+
+  /* Styling Main section for Desktop View by adding a grid to mske the content sit next to each other*/
+
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 90% 10%;
+  }
+
+  .main h1 {
+    margin-bottom: 5rem;
+  }
+
+  .grid-left {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    width: 90%;
+  }
+
+  .grid-right {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  /* Styling Discover section into a two column grid so the content sits next to each other */
+
+  .discover-img {
+    margin-top: 5rem;
+    width: 100%;
+  }
+
+  .get-started {
+    margin: 1.5rem 0 3rem 0;
+    width: auto;
+    padding: 0.5rem 2rem;
+    font-size: 1.5rem;
+  }
+
+  .school-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #F2F2F2;
+    padding: 2rem;
+  }
+
+  .school-img {
+    width: auto;
+    grid-column: 1/2;
+    margin-right: 2rem;
+  }
+
+  .school {
+    width: 100%;
+  }
+
+  .discover {
+    width: 100%;
+    grid-column: 2/3;
+    margin: 1rem 0;
+  }
+
+  .discover h2,
+  .discover h3 {
+    margin: 0;
+  }
+
+  .discover h3 {
+    margin-top: 0.5rem;
+  }
+
+  .learn-more {
+    padding: 0.5rem;
+    width: 35%;
+  }
+
+  /* Styling the Profile section into a 3 column grid so the content sits next to each other */
+
+  .profile {
+    display: grid;
+    grid-template-columns: 15% 15% 70%;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .simon {
+    grid-column: 1/2;
+    width: 100%;
+  }
+
+  .profile-head h4 {
+    grid-column: 2/3;
+    margin: 0.5rem 0;
+  }
+
+  .profile-p {
+    grid-column: 3/4;
   }
 }
