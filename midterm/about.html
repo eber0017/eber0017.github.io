@@ -62,24 +62,30 @@
   </div>
   <div class="wrapper">
     <div class="restaurant">
-      <picture>
-        <source srcset="images/bar_rect.jpg" media="(min-width:800px)">
+      <!-- Picture tag that will be hidden in the Mobile view and then  the rectangle image for the tablet view (900px) and the original picture for the Desktop View -->
+      <picture class="bar-pic">
+        <source srcset="images/bar.jpg" media="(min-width:1200px)">
+        <source srcset="images/bar_rect.jpg" media="(min-width:900px)">
         <img src="images/bar.jpg" alt="bar" class="bar-img">
       </picture>
-      <h2>Need a break?</h2>
-      <h3>Restaurant & Lounge</h3>
-      <p>will have full service throughout the day. Why not come in after a long day of class and order one of our
-        famous poutines. Finished with your food and drink? Why not try out the new billiards area. Grab some friends
-        and dominate them in some pool. Pool, not your thing? Then come on downstairs and try out the new bowling
-        lanes! </p>
+      <div class="restaurant-text">
+        <h2>Need a break?</h2>
+        <h3>Restaurant & Lounge</h3>
+        <p>will have full service throughout the day. Why not come in after a long day of class and order one of our
+          famous poutines. Finished with your food and drink? Why not try out the new billiards area. Grab some friends
+          and dominate them in some pool. Pool, not your thing? Then come on downstairs and try out the new bowling
+          lanes! </p>
+      </div>
     </div>
   </div>
   <div class="competitive-friends">
+    <!-- Picture tag that will be hidden in the Mobile view and then  the rectangle image for the tablet view (900px) and the original picture for the Desktop View -->
     <picture>
-      <source srcset="images/bowling_rect.jpg" media="(min-width:800px)">
+      <source srcset="images/bowling.jpg" media="(min-width:1200px)">
+      <source srcset="images/bowling_rect.jpg" media="(min-width:900px)">
       <img src="images/bowling.jpg" alt="bowling" class="bowling-img">
     </picture>
-    <div class="friends-container">
+    <div class="friends-text">
       <h2>Competitive Friends?</h2>
       <h3>Bowling Lanes</h3>
       <p>are finally here. Grab your friends and book a lane at the Students’ Association Bowling Lanes that will be
@@ -93,8 +99,10 @@
   </div>
   <div class="wrapper">
     <div class="fitness">
+      <!-- Picture tag that will be hidden in the Mobile view and then  the rectangle image for the tablet view (900px) and the original picture for the Desktop View -->
       <picture>
-        <source srcset="images/fitness_rect.jpg" media="(min-width:800px)">
+        <source srcset="images/fitness.jpg" media="(min-width:1200px)">
+        <source srcset="images/fitness_rect.jpg" media="(min-width:900px)">
         <img src="images/fitness.jpg" alt="fitness" class="fitness-img">
       </picture>
       <h2>New year, new me.</h2>
@@ -106,8 +114,10 @@
     </div>
   </div>
   <div class="climbing">
+    <!-- Picture tag that will be hidden in the Mobile view and then  the rectangle image for the tablet view (900px) and the original picture for the Desktop View -->
     <picture>
-      <source srcset="images/climbing_rect.jpg">
+      <source srcset="images/climbing.jpg" media="(min-width:1200px)">
+      <source srcset="images/climbing_rect.jpg" media="(min-width:900px)">
       <img src="images/climbing.jpg" alt="climbing" class="climbing-img">
     </picture>
     <div class="climbing-container">

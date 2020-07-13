@@ -97,6 +97,10 @@ nav li a {
   color: #F2F2F2;
 }
 
+.scroll {
+  display: none;
+}
+
 /*Styling hover and active link*/
 
 nav li a:hover,
@@ -352,7 +356,7 @@ Start Styling About Page
   padding: 1.5rem 0;
 }
 
-.friends-container {
+.friends-text {
   width: 80%;
   margin: 0 auto;
 }
@@ -555,7 +559,7 @@ Tablet View
 ****************
 *****************/
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
 
   /* Resizing main text based on XD file */
 
@@ -634,6 +638,7 @@ Tablet View
   }
 
   .scroll {
+    display: block;
     align-items: center;
     justify-items: center;
   }
@@ -646,6 +651,21 @@ Tablet View
     margin-bottom: 1rem;
   }
 
+  /* Creating animation for scroll arrow */
+
+  @keyframes up-down {
+    50% {
+      transform: translate(0, -15px)
+    }
+  }
+
+  .scroll {
+    animation-name: up-down;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+
   .learn-more {
     border-radius: 25px;
     padding-left: 2rem;
@@ -656,10 +676,22 @@ Tablet View
   .profile {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
   }
 
   .simon {
     width: 35%;
+    grid-column: 1/2;
+  }
+
+  .profile-head {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .profile-p {
+    grid-column: 2/3;
+    grid-row: 1/3;
   }
 
   /***********************************
@@ -675,6 +707,39 @@ Tablet View
     display: block;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .bar-img,
+  .bowling-img,
+  .fitness-img,
+  .climbing-img {
+    display: block;
+    width: 100%;
+  }
+
+  .restaurant {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 2rem;
+  }
+
+  .bar-pic {
+    grid-column: 1/2;
+    margin-right: 1.5rem;
+  }
+
+  .competitive-friends {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 3rem;
+  }
+
+  .friends-text {
+    grid-column: 1/2;
+  }
+
+  .bowling-img {
+    grid-column: 2/3;
   }
 
   .newsletter {
@@ -761,7 +826,7 @@ Desktop View
 *************
 **************/
 
-@media (min-width: 1000px) {
+@media (min-width: 1200px) {
 
   /* Changing text size for Desktop View */
 
@@ -877,6 +942,7 @@ Desktop View
   .profile {
     display: grid;
     grid-template-columns: 15% 15% 70%;
+    grid-template-rows: auto;
     margin: 0;
     padding: 1rem;
     align-items: center;
@@ -888,13 +954,14 @@ Desktop View
     width: 100%;
   }
 
-  .profile-head h4 {
+  .profile-head {
     grid-column: 2/3;
-    margin: 0.5rem 0;
+    grid-row: 1/2;
   }
 
   .profile-p {
     grid-column: 3/4;
+    grid-row: 1/2;
   }
 
   /* Styling entertainment section so the contect sits in a two column grid */
@@ -958,6 +1025,10 @@ Desktop View
 
   /* Creating a 2 column grid so the location information and map sit next to each other */
 
+  h7 {
+    font-size: 1.5rem;
+  }
+
   .location-sec {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -968,6 +1039,7 @@ Desktop View
   .location {
     grid-column: 1/2;
     grid-row: 1/2;
+    margin-right: 0.5rem;
   }
 
   .location-text {
@@ -977,6 +1049,9 @@ Desktop View
   iframe {
     grid-column: 2/3;
     grid-row: 1/2;
+    height: 350px;
+    width: 100%;
+    margin-left: 1rem;
   }
 
   /******************************
