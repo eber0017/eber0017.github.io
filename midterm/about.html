@@ -26,13 +26,17 @@
   <!-- each section has its appropriate text, images, and buttons -->
   <div class="wrapper">
     <div class="construction">
-      <h1>What to expect during construction.</h1>
-      <p>With construction starting in April 2019 we anticipate the new arrival of the ARC building as early as August
-        2021.</p>
-      <p>The current SA Fitness Zone and gym will be operating and open as usual. Please visit the Fitness Zone and the
-        Gymnasium for more information on the hours, offerings, and pricing.</p>
-
-      <img src="images/construction.svg" alt="construction" class="construction-img">
+      <div class="construction-text">
+        <h1>What to expect during construction.</h1>
+        <p>With construction starting in April 2019 we anticipate the new arrival of the ARC building as early as August
+          2021.</p>
+        <p>The current SA Fitness Zone and gym will be operating and open as usual. Please visit the Fitness Zone and
+          the
+          Gymnasium for more information on the hours, offerings, and pricing.</p>
+      </div>
+      <div class="construction-pic">
+        <img src="images/construction.svg" alt="construction" class="construction-img">
+      </div>
     </div>
   </div>
   <div class="about">
@@ -40,19 +44,27 @@
       <h1>About</h1>
     </div>
     <div class="wrapper">
-      <h2 class="bold">Who</h2>
-      <p>is ARC? We are the Athletics & Recreation Centre. This is an exciting venture for our Algonquin Community.
-        This facility will provide our students with a place to break through perceptual barriers in a welcoming,
-        safe, inclusive and inviting environment for students of all backgrounds, cultures and abilities to spark a
-        movement.</p>
-      <h2 class="bold">What</h2>
-      <p>is this going to cost me? This facility will be included in your activity fee. All fee-paying students can
-        use and participate in all activities in the building. As for the facility, it will cost Algonquin College
-        $48.8 million.</p>
-      <h2 class="bold">Where</h2>
-      <p>will the ARC building be? The ARC building will be located northeast of the Student Commons building,
-        opposite of the residence. The facility will be an estimated 100,000 square feet! Connected to the Student
-        Commons by a "Plus 15" Pedestrian Link. </p>
+      <div class="about-sec">
+        <div class="who">
+          <h2 class="bold">Who</h2>
+          <p>is ARC? We are the Athletics & Recreation Centre. This is an exciting venture for our Algonquin Community.
+            This facility will provide our students with a place to break through perceptual barriers in a welcoming,
+            safe, inclusive and inviting environment for students of all backgrounds, cultures and abilities to spark a
+            movement.</p>
+        </div>
+        <div class="what">
+          <h2 class="bold">What</h2>
+          <p>is this going to cost me? This facility will be included in your activity fee. All fee-paying students can
+            use and participate in all activities in the building. As for the facility, it will cost Algonquin College
+            $48.8 million.</p>
+        </div>
+        <div class="where">
+          <h2 class="bold">Where</h2>
+          <p>will the ARC building be? The ARC building will be located northeast of the Student Commons building,
+            opposite of the residence. The facility will be an estimated 100,000 square feet! Connected to the Student
+            Commons by a "Plus 15" Pedestrian Link. </p>
+        </div>
+      </div>
     </div>
   </div>
   <div class="services">
@@ -60,22 +72,20 @@
       <h1>Services</h1>
     </div>
   </div>
-  <div class="wrapper">
-    <div class="restaurant">
-      <!-- Picture tag that will be hidden in the Mobile view and then  the rectangle image for the tablet view (900px) and the original picture for the Desktop View -->
-      <picture class="bar-pic">
-        <source srcset="images/bar.jpg" media="(min-width:1200px)">
-        <source srcset="images/bar_rect.jpg" media="(min-width:900px)">
-        <img src="images/bar.jpg" alt="bar" class="bar-img">
-      </picture>
-      <div class="restaurant-text">
-        <h2>Need a break?</h2>
-        <h3>Restaurant & Lounge</h3>
-        <p>will have full service throughout the day. Why not come in after a long day of class and order one of our
-          famous poutines. Finished with your food and drink? Why not try out the new billiards area. Grab some friends
-          and dominate them in some pool. Pool, not your thing? Then come on downstairs and try out the new bowling
-          lanes! </p>
-      </div>
+  <div class="restaurant">
+    <!-- Picture tag that will be hidden in the Mobile view and then  the rectangle image for the tablet view (900px) and the original picture for the Desktop View -->
+    <picture class="bar-pic">
+      <source srcset="images/bar.jpg" media="(min-width:1200px)">
+      <source srcset="images/bar_rect.jpg" media="(min-width:900px)">
+      <img src="images/bar.jpg" alt="bar" class="bar-img">
+    </picture>
+    <div class="restaurant-text">
+      <h2>Need a break?</h2>
+      <h3>Restaurant & Lounge</h3>
+      <p>will have full service throughout the day. Why not come in after a long day of class and order one of our
+        famous poutines. Finished with your food and drink? Why not try out the new billiards area. Grab some friends
+        and dominate them in some pool. Pool, not your thing? Then come on downstairs and try out the new bowling
+        lanes! </p>
     </div>
   </div>
   <div class="competitive-friends">
@@ -97,14 +107,14 @@
     <p>Keep up to date with our news letter</p>
     <button type="button" class="subscribe">Subscribe</button>
   </div>
-  <div class="wrapper">
-    <div class="fitness">
-      <!-- Picture tag that will be hidden in the Mobile view and then  the rectangle image for the tablet view (900px) and the original picture for the Desktop View -->
-      <picture>
-        <source srcset="images/fitness.jpg" media="(min-width:1200px)">
-        <source srcset="images/fitness_rect.jpg" media="(min-width:900px)">
-        <img src="images/fitness.jpg" alt="fitness" class="fitness-img">
-      </picture>
+  <div class="fitness">
+    <!-- Picture tag that will be hidden in the Mobile view and then  the rectangle image for the tablet view (900px) and the original picture for the Desktop View -->
+    <picture class="fitness-pic">
+      <source srcset="images/fitness.jpg" media="(min-width:1200px)">
+      <source srcset="images/fitness_rect.jpg" media="(min-width:900px)">
+      <img src="images/fitness.jpg" alt="fitness" class="fitness-img">
+    </picture>
+    <div class="fitness-text">
       <h2>New year, new me.</h2>
       <h3>Fitness rooms</h3>
       <p>Cardio equipment, free weights, selectorized weight equipment and stretching areas will be located in
@@ -115,12 +125,12 @@
   </div>
   <div class="climbing">
     <!-- Picture tag that will be hidden in the Mobile view and then  the rectangle image for the tablet view (900px) and the original picture for the Desktop View -->
-    <picture>
+    <picture class="climbing-pic">
       <source srcset="images/climbing.jpg" media="(min-width:1200px)">
       <source srcset="images/climbing_rect.jpg" media="(min-width:900px)">
       <img src="images/climbing.jpg" alt="climbing" class="climbing-img">
     </picture>
-    <div class="climbing-container">
+    <div class="climbing-text">
       <h2>Indoor climbing?</h2>
       <h3>Rock climbing</h3>
       <p>Test your strength and flexibility on the rock-climbing wall. Add some variety to your fitness routine, the
@@ -132,10 +142,12 @@
   <div class="wrapper">
     <div class="thanks">
       <h1>Special thank you to the following</h1>
-      <img src="images/sa.png" alt="sa" class="sa">
-      <img src="images/AC_ICON_FC_GRN_240x200.png" alt="ac" class="ac">
-      <img src="images/pcl.png" alt="pcl" class="pcl">
-      <img src="images/cibc.png" alt="cibc" class="cibc">
+      <div class="special-logos">
+        <img src="images/sa.png" alt="sa" class="sa">
+        <img src="images/AC_ICON_FC_GRN_240x200.png" alt="ac" class="ac">
+        <img src="images/pcl.png" alt="pcl" class="pcl">
+        <img src="images/cibc.png" alt="cibc" class="cibc">
+      </div>
     </div>
 
   </div>
