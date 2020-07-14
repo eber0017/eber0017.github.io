@@ -46,11 +46,6 @@ h6 {
   margin: 0;
 }
 
-h7 {
-  font-size: 1.3rem;
-  font-weight: lighter;
-}
-
 p {
   font-size: 1rem;
   color: #3C3B3A;
@@ -507,6 +502,13 @@ textarea {
 }
 
 /* Styling location section */
+
+.location {
+  width: 80%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 .location p {
   line-height: 2rem;
@@ -1151,9 +1153,13 @@ Desktop View
     width: 100%;
   }
 
+  .submit {
+    width: 35%;
+  }
+
   /* Creating a 2 column grid so the location information and map sit next to each other */
 
-  h7 {
+  .location h2 {
     font-size: 1.5rem;
   }
 
@@ -1165,6 +1171,7 @@ Desktop View
   }
 
   .location {
+    width: 90%;
     grid-column: 1/2;
     grid-row: 1/2;
     margin-right: 0.5rem;
@@ -1178,7 +1185,6 @@ Desktop View
     grid-column: 2/3;
     grid-row: 1/2;
     height: 350px;
-    width: 100%;
     margin-left: 1rem;
   }
 
