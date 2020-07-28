@@ -25,36 +25,189 @@
     </button>
     <div class="collapse navbar-collapse" id="navbardropdown">
       <div class="navbar-nav mr-auto mt-2 mt-lg-0">
-        <a class="nav-link">About Bootstrap</a>
-        <a class="nav-link">Advantages</a>
-        <a class="nav-link">Mobile First</a>
-        <a class="nav-link">Components</a>
+        <a class="nav-link" href="#about">About Bootstrap</a>
+        <a class="nav-link" href="#advantages">Advantages</a>
+        <a class="nav-link" href="#components">Components</a>
       </div>
       <form class="form-inline my-2 my-lg-0">
         <input type="text" class="form-control" placeholder="search">
         <button class="btn btn-outline-info ml-2" type="submit">Search</button>
       </form>
     </div>
-
   </nav>
+
 </header>
 
 <body>
-  <div class="mt-5 pt-5">
-    <h1>Hello, world!</h1>
+  <div class="container container-fluid">
+    <div><a id="about">
+        <h1 class="mt-5 pt-5">About Bootstrap</h1>
+        <p>Bootstrap is a free and open-source CSS framework that is completely responsive, mobile-first web development
+          tool. It contains CSS and JavaScript-based design templates for typography, forms, buttons, navigation, and
+          other
+          interface components.</p>
+        <p>Bootstrap is a web framework that focuses on simplifying the development of websites. Bootstrap allows the
+          developer to choose from its various colours, sizes, fonts and layouts that they can then add to any project.
+          Once
+          Bootstrap is added to a project, Bootstrap provides basic style definitions for all HTML elements as well as
+          CSS
+          classes defined to further customize the appearance of their contents. </p>
+        <p>Bootstrap also comes with several JavaScript components that provide additional
+          user interface elements such as dialog boxes, tooltips, and carousels.</p>
+      </a>
+    </div>
+    <div><a id="advantages">
+        <h1 class="mt-5 pt-5">Bootstrap Advantages</h1>
+        <p>The advantages of Bootstrap are:</p>
+        <ul>
+          <li>Responsive structure and styles</li>
+          <li>Javascript is included</li>
+          <li>Lightweight and customizable</li>
+          <li> Consistent framework</li>
+          <li>Supported in most browsers</li>
+          <li>Provides a detailed documentation list</li>
+          <li>Community support</li>
+        </ul>
+      </a>
+    </div>
+    <div><a id="components">
+        <h1 class="mt-5 pt-5">Components</h1>
+        <p>Bootstrap comes with dozens of resuable components that include navigation, alerts, buttons,and
+          so much more.
+        </p>
+        <div class="row align-items-center">
+          <div class="col-4">
+            <h2>Buttons</h2>
+            <p>Bootstrap provides various predefined button styles. Each button serves a different purpose. To use
+              "buttons" in your website, use one the nine classes that Bootstrap provides. The nine classes are:
+              primary, secondary, success, danger, warning, info, light, dark, and link.</p>
+          </div>
+          <p class="col-8"><button type="button" class="btn btn-primary">Primary</button>
+            <button type="button" class="btn btn-secondary">Secondary</button>
+            <button type="button" class="btn btn-success">Success</button>
+            <button type="button" class="btn btn-danger">Danger</button>
+            <button type="button" class="btn btn-warning">Warning</button>
+            <button type="button" class="btn btn-info">Info</button>
+            <button type="button" class="btn btn-light">Light</button>
+            <button type="button" class="btn btn-dark">Dark</button>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
-    </script>
+            <button type="button" class="btn btn-link">Link</button></p>
+        </div>
+        <div class="row mt-5 align-items-center">
+          <div class="col-4">
+            <h2>Alerts</h2>
+            <p>This is a way to provide contextual feedback messages for user actions. This component is available for
+              any
+              length of text. To use "alerts" in your website, use one of the eight classes that Bootstrap provides.
+              Examples of
+              these classes are shown below.</p>
+            <p>
+          </div>
+          <div class="col">
+            <div class="alert alert-primary" role="alert">
+              A simple primary alert—check it out!
+            </div>
+            <div class="alert alert-secondary" role="alert">
+              A simple secondary alert—check it out!
+            </div>
+            <div class="alert alert-success" role="alert">
+              A simple success alert—check it out!
+            </div>
+            <div class="alert alert-danger" role="alert">
+              A simple danger alert—check it out!
+            </div>
+            <div class="alert alert-warning" role="alert">
+              A simple warning alert—check it out!
+            </div>
+            <div class="alert alert-info" role="alert">
+              A simple info alert—check it out!
+            </div>
+            <div class="alert alert-light" role="alert">
+              A simple light alert—check it out!
+            </div>
+            <div class="alert alert-dark" role="alert">
+              A simple dark alert—check it out!
+            </div>
+          </div>
+        </div>
+        <div class="row mt-5 align-items-center">
+          <div class="col-4">
+            <h2>Forms</h2>
+            <p>Along with the various components Bootstrap provides, it also includes customs classes to control styles
+              and layout options to create a variety of forms. The example shows a very simple form but with Bootstrap
+              the developer can customize focus, state, sizing, and much more!</p>
+          </div>
+          <p>
+            <form class="col">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone
+                  else.</small>
+              </div>
+              <div class="form-group">
+                <label for="exampleInputPassword1">Password</label>
+                <input type="password" class="form-control" id="exampleInputPassword1">
+              </div>
+              <div class="form-group form-check">
+                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </p>
+        </div>
+        <div class="row mt-5 mb-5 align-items-center">
+          <div class="col-4">
+            <h2>Breadcrumb</h2>
+            <p>Breadcrumb is a way to illustrate the current page's location in the navigational hierarchy. Bootstrap
+              provides
+              it's own custom class to allow a developer to include a breadcrumb in their own website. Below is an
+              example
+              of
+              how "Breadcrumb" works with Bootstrap.</p>
+          </div>
+          <div class="col-8">
+            <p>
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item active" aria-current="page">Home</li>
+                </ol>
+              </nav>
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Library</li>
+                </ol>
+              </nav>
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#">Home</a></li>
+                  <li class="breadcrumb-item"><a href="#">Library</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Data</li>
+                </ol>
+              </nav>
+            </p>
+          </div>
+        </div>
+      </a>
+    </div>
   </div>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script>
+  </div>
+  <footer>
+    <p class="p-5 bg-dark text-light">&copy;Jasmine Ebery, 2020.</p>
+  </footer>
 </body>
 
 </html>
