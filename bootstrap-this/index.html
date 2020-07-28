@@ -13,7 +13,7 @@
   <title>Bootstrap This</title>
 </head>
 
-<header>
+<header id="top">
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
     <a class="navbar-brand" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bootstrap-fill"
         fill="currentColor" xmlns="http://www.w3.org/2000/svg">
@@ -39,8 +39,8 @@
 </header>
 
 <body>
-  <div class="container container-fluid">
-    <div><a id="about">
+  <div class="container-xl">
+    <div class="jumbotron"><a id="about">
         <h1 class="mt-5 pt-5">About Bootstrap</h1>
         <p>Bootstrap is a free and open-source CSS framework that is completely responsive, mobile-first web development
           tool. It contains CSS and JavaScript-based design templates for typography, forms, buttons, navigation, and
@@ -214,8 +214,17 @@
     }
   </script>
   </div>
-  <footer>
-    <p class="p-5 bg-dark text-light">&copy;Jasmine Ebery, 2020.</p>
+  <footer class="p-5 bg-dark text-light row">
+    <p class="col-6">&copy;Jasmine Ebery, 2020.</p>
+    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-arrow-up-square col-6 text-light h3"
+      fill="currentColor" xmlns="http://www.w3.org/2000/svg"><a href="#top">
+        <path fill-rule="evenodd"
+          d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+        <path fill-rule="evenodd"
+          d="M4.646 8.354a.5.5 0 0 0 .708 0L8 5.707l2.646 2.647a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 0 0 0 .708z" />
+        <path fill-rule="evenodd" d="M8 11.5a.5.5 0 0 0 .5-.5V6a.5.5 0 0 0-1 0v5a.5.5 0 0 0 .5.5z" />
+      </a>
+    </svg>
   </footer>
 </body>
 
