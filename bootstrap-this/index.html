@@ -54,6 +54,7 @@
           classes defined to further customize the appearance of their contents. </p>
         <p>Bootstrap also comes with several JavaScript components that provide additional
           user interface elements such as dialog boxes, tooltips, and carousels.</p>
+        <button type="button" class="btn btn-info" onclick="bootstrap_home()">Learn More</button>
       </a>
     </div>
     <div><a id="advantages">
@@ -75,6 +76,7 @@
         <p>Bootstrap comes with dozens of resuable components that include navigation, alerts, buttons,and
           so much more.
         </p>
+        <button type="button" class="btn btn-info mb-5" onclick="bootstrap_components()">Learn More</button>
         <div class="row align-items-center">
           <div class="col-4">
             <h2>Buttons</h2>
@@ -157,17 +159,14 @@
             </form>
           </p>
         </div>
-        <div class="row mt-5 mb-5 align-items-center">
-          <div class="col-4">
+        <div class="mt-5 mb-5 align-items-center">
+          <div>
             <h2>Breadcrumb</h2>
             <p>Breadcrumb is a way to illustrate the current page's location in the navigational hierarchy. Bootstrap
-              provides
-              it's own custom class to allow a developer to include a breadcrumb in their own website. Below is an
-              example
-              of
-              how "Breadcrumb" works with Bootstrap.</p>
+              provides it's own custom class to allow a developer to include a breadcrumb in their own website. Below is
+              an example of how "Breadcrumb" works with Bootstrap.</p>
           </div>
-          <div class="col-8">
+          <div>
             <p>
               <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
@@ -203,6 +202,16 @@
   </script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script>
+  <script>
+    function bootstrap_home() {
+      location.href = "https://getbootstrap.com/"
+    }
+  </script>
+  <script>
+    function bootstrap_components() {
+      location.href = "https://getbootstrap.com/docs/4.5/components/alerts/"
+    }
   </script>
   </div>
   <footer>
