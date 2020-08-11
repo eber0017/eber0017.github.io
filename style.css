@@ -7,7 +7,7 @@
 }
 
 .head {
-  width: 80%;
+  width: 100%;
   height: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -20,9 +20,41 @@
 }
 
 .portfolio {
-  width: 200px;
-  height: 50px;
+  align-self: end;
   grid-column: 2/3;
   grid-row: 3/4;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
 
+.quote {
+  width: 100%;
+  background-color: #B9D1E2;
+}
+
+.logo {
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  background-color: #B9D1E2;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+footer li {
+  color: #6E7B9B;
+}
+
+.social {
+  background-color: #6E7B9B;
+  color: white;
 }
