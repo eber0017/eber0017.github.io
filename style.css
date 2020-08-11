@@ -61,7 +61,22 @@ MOBILE VIEW
   margin-right: auto;
 }
 
+.about-sec {
+  padding: 45px 50px;
+}
+
+.learn-more {
+  padding: 5px 10px;
+  font-size: .75rem;
+  font-weight: bold;
+  border: none;
+  background-color: #6E7B9B;
+  color: white;
+  border-radius: 5px;
+}
+
 footer {
+  padding: 10px;
   background-color: #B9D1E2;
 }
 
@@ -72,11 +87,29 @@ footer ul {
   list-style: none;
 }
 
-footer li {
+footer a {
+  font-size: 0.6rem;
+  font-weight: bold;
   color: #6E7B9B;
 }
 
+.bi-arrow-up-square {
+  margin-top: 3px;
+  color: #6E7B9B;
+  font-size: 1.4rem;
+}
+
 .social {
+  font-size: .75rem;
+  align-content: center;
+  padding: 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   background-color: #6E7B9B;
   color: white;
+}
+
+#social-icons {
+  justify-content: flex-end;
 }
