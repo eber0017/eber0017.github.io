@@ -1,3 +1,7 @@
+/***********
+MOBILE VIEW 
+*************/
+
 .navbar {
   background-color: #6E7B9B;
 }
@@ -23,13 +27,31 @@
   align-self: end;
   grid-column: 2/3;
   grid-row: 3/4;
-  padding: 10px 0;
+  padding: 5px 0;
   margin-bottom: 20px;
+  font-size: .75rem;
+  font-weight: bold;
+  border: none;
+  background-color: #6E7B9B;
+  color: white;
+  border-radius: 5px;
 }
 
 .quote {
   width: 100%;
   background-color: #B9D1E2;
+  padding: 10px;
+}
+
+.quote p {
+  color: #6E7B9B;
+  font-size: 1rem;
+  padding: 10px 50px;
+  text-align: center;
+}
+
+.blockquote-footer {
+  color: #6E7B9B;
 }
 
 .logo {
