@@ -544,4 +544,91 @@ HOME PAGE DESKTOP VIEW
     margin: 0 auto;
   }
 
+  .main-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .section-1 {
+    grid-column: 1/2;
+
+  }
+
+  .section-2 {
+    grid-column: 2/3;
+  }
+
+  /************
+  CONTACT PAGE 
+  ************/
+
+  .number,
+  .email,
+  .instagram,
+  .facebook {
+    text-align: left;
+  }
+
+  .fa-phone-alt,
+  .fa-envelope-open-text,
+  .fa-instagram,
+  .fa-facebook-square {
+    font-size: 2.3rem;
+  }
+
+  .info-grid {
+    grid-template-columns: 5% 20% 5% 20% 5% 20% 5% 20%;
+    grid-template-rows: 1fr;
+    grid-gap: 0 10px;
+  }
+
+  .fa-phone-alt {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .number {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .fa-envelope-open-text {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+
+  .email {
+    grid-column: 4/5;
+    grid-row: 1/2;
+  }
+
+  .fa-instagram {
+    grid-column: 5/6;
+    grid-row: 1/2;
+  }
+
+  .instagram {
+    grid-column: 6/7;
+    grid-row: 1/2;
+  }
+
+  .fa-facebook-square {
+    grid-column: 7/8;
+    grid-row: 1/2;
+  }
+
+  .facebook {
+    grid-column: 8/9;
+    grid-row: 1/2;
+  }
+
+  .btn {
+    width: 15%;
+  }
+
+  .instagram-footer,
+  .facebook-footer {
+    font-size: 1.5rem;
+  }
+
 }
