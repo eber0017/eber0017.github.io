@@ -320,3 +320,29 @@ footer a {
   color: white;
   /*can't see the icons in the footer */
 }
+
+/*************
+ TABLET VIEW 
+ **************/
+
+@media (min-width: 560px) {
+
+  /* Styling Navigation */
+
+
+
+  /*********
+HOME PAGE 
+**********/
+
+  .portfolio {
+    grid-column: 3/4;
+    width: 60%;
+    padding: 5px;
+  }
+
+  .logo {
+    width: 35%;
+  }
+
+}
