@@ -102,7 +102,7 @@ h1 {
 h1:after {
   content: "";
   display: block;
-  width: 125px;
+  width: 35%;
   height: 2px;
   background: #6E7B9B;
   position: absolute;
@@ -270,11 +270,16 @@ CONTACT PAGE
   color: white;
 }
 
+.footer-sec {
+  background-color: #B9D1E2;
+}
+
 footer {
+  width: 90%;
+  margin: 0 auto;
+  padding: 5px 0;
   display: grid;
   grid-template-columns: 90% 10%;
-  padding: 10px 0;
-  background-color: #B9D1E2;
 }
 
 footer ul {
@@ -305,6 +310,10 @@ footer a {
   grid-column: 2/3;
 }
 
+.social-sec {
+  background-color: #6E7B9B;
+}
+
 .social {
   font-size: .75rem;
   align-content: center;
@@ -312,28 +321,29 @@ footer a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #6E7B9B;
   color: white;
 }
 
-#footer-icons {
+.instagram-footer,
+.facebook-footer {
   color: white;
-  /*can't see the icons in the footer */
+  font-size: 1.5rem;
+
 }
 
 /*************
  TABLET VIEW 
  **************/
 
-@media (min-width: 560px) {
+@media (min-width: 576px) {
 
   /* Styling Navigation */
 
 
 
-  /*********
-HOME PAGE 
-**********/
+  /********************
+HOME PAGE TABLET VIEW
+***********************/
 
   .portfolio {
     grid-column: 3/4;
@@ -343,6 +353,184 @@ HOME PAGE
 
   .logo {
     width: 35%;
+  }
+
+  .about-sec {
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .learn-more {
+    width: 25%;
+    padding: 5px;
+  }
+
+  /**********************
+  ABOUT PAGE TABLET VIEW 
+  ***********************/
+  .main-container {
+    background-color: #E9ECEE;
+  }
+
+  .about-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  h1:after {
+    width: 50%;
+  }
+
+
+  .profile-pic {
+    margin-top: 45px;
+    width: 100%;
+  }
+
+  h5 {
+    text-align: left;
+  }
+
+  .neil-gaimen {
+    text-align: left;
+  }
+
+  .resume {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .view,
+  .print {
+    width: 100%;
+    padding: 5px 40px;
+  }
+
+  /**************************
+  CONTACT PAGE TABLET VIEW 
+  **************************/
+
+  .contact-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .icon-sec {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .info-grid {
+    margin-top: 45px;
+    grid-template-columns: 15% 35% 15% 35%;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 35px 0;
+  }
+
+  .fa-phone-alt,
+  .fa-envelope-open-text,
+  .fa-instagram,
+  .fa-facebook-square {
+    font-size: 3.5rem;
+  }
+
+  .number,
+  .email,
+  .instagram,
+  .facebook {
+    text-align: center;
+    font-size: .75rem;
+  }
+
+  .fa-phone-alt {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .number {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .fa-envelope-open-text {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+
+  .email {
+    grid-column: 4/5;
+    grid-row: 1/2;
+  }
+
+  .fa-instagram {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  .instagram {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .fa-facebook-square {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+
+  .facebook {
+    grid-column: 4/5;
+    grid-row: 2/3;
+  }
+
+  .btn {
+    width: 25%;
+  }
+
+  .instagram-footer,
+  .facebook-footer {
+    font-size: 1.5rem;
+  }
+
+}
+
+/*************
+DESKTOP VIEW 
+**************/
+
+@media (min-width: 960px) {
+
+  /********************* 
+HOME PAGE DESKTOP VIEW 
+***********************/
+
+  .quote {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr;
+  }
+
+  .logo {
+    width: 45%;
+  }
+
+  /**********************
+  ABOUT PAGE DESKTOP VIEW  
+  ***********************/
+
+  h1:after {
+    width: 65%;
+  }
+
+  .blockquote {
+    text-align: left;
+  }
+
+  .social {
+    padding: 5px;
+    width: 80%;
+    margin: 0 auto;
   }
 
 }
