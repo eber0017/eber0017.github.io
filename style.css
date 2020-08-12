@@ -6,6 +6,10 @@ MOBILE VIEW
   background-color: #6E7B9B;
 }
 
+h6 {
+  font-family: 'Vidaloka', serif;
+}
+
 .wrapper {
   width: 100%;
 }
@@ -55,6 +59,7 @@ HOME PAGE
 }
 
 .blockquote-footer {
+  font-family: 'Montserrat', sans-serif;
   color: #6E7B9B;
 }
 
@@ -92,7 +97,7 @@ HOME PAGE
 
 h1 {
   padding: 10px 25px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Vidaloka', serif;
   font-size: 1.5rem;
   font-weight: bold;
   position: relative;
@@ -124,6 +129,7 @@ h5 {
 }
 
 .blockquote {
+  font-family: 'Montserrat', sans-serif;
   padding: 10px;
   text-align: center;
   font-size: 1rem;
@@ -150,6 +156,7 @@ h5 {
 }
 
 h2 {
+  font-family: 'Vidaloka', serif;
   margin-top: 50px;
   color: #6E7B9B;
   font-size: 1.5rem;
@@ -157,6 +164,7 @@ h2 {
 }
 
 h4 {
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   color: #6E7B9B;
   font-size: 1rem;
@@ -290,6 +298,7 @@ footer ul {
 }
 
 footer a {
+  font-family: 'Montserrat', sans-serif;
   font-size: 0.6rem;
   font-weight: bold;
   color: #6E7B9B;
@@ -300,6 +309,7 @@ footer a {
 }
 
 .copyright {
+  font-family: 'Montserrat', sans-serif;
   color: white;
 }
 
@@ -389,6 +399,7 @@ HOME PAGE TABLET VIEW
   }
 
   h5 {
+    font-family: 'Vidaloka', serif;
     text-align: left;
   }
 
