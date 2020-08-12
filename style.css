@@ -10,6 +10,10 @@ MOBILE VIEW
   width: 100%;
 }
 
+/********** 
+HOME PAGE 
+***********/
+
 .head {
   width: 100%;
   height: auto;
@@ -71,19 +75,212 @@ MOBILE VIEW
   font-weight: bold;
   border: none;
   background-color: #6E7B9B;
-  color: white;
   border-radius: 5px;
 }
 
-footer {
+.learn-more a {
+  color: white;
+}
+
+/************
+ ABOUT PAGE 
+ ***********/
+.grey {
+  background-color: #E9ECEE;
+  padding: 20px;
+}
+
+h1 {
+  padding: 10px 25px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: relative;
+  color: #6E7B9B;
+}
+
+h1:after {
+  content: "";
+  display: block;
+  width: 125px;
+  height: 2px;
+  background: #6E7B9B;
+  position: absolute;
+  right: 10%;
+  top: 50%;
+}
+
+.profile-pic {
+  width: 85%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h5 {
+  margin-top: 10px;
+  color: #6E7B9B;
+  text-align: center;
+}
+
+.blockquote {
   padding: 10px;
+  text-align: center;
+  font-size: 1rem;
+  color: #6E7B9B;
+}
+
+.print,
+.view {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #6E7B9B;
+  border: none;
+  border-radius: 10px;
+  padding: 5px 15px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.print a,
+.view a {
+  color: white;
+  font-weight: bold;
+}
+
+h2 {
+  margin-top: 50px;
+  color: #6E7B9B;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h4 {
+  font-weight: bold;
+  color: #6E7B9B;
+  font-size: 1rem;
+}
+
+p {
+  color: #6E7B9B;
+}
+
+ul li {
+  color: #6E7B9B;
+}
+
+/************ 
+CONTACT PAGE 
+*************/
+
+/* Styling personal information and social links to be in a 2 column 4 row grid */
+
+.blue {
+  background-color: #B9D1E2;
+  padding: 35px 30px;
+}
+
+.info-grid {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 20% 80%;
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.fa-phone-alt,
+.fa-envelope-open-text,
+.fa-instagram,
+.fa-facebook-square {
+  grid-column: 1/2;
+  font-size: 40px;
+  color: #6E7B9B;
+}
+
+.fa-phone-alt {
+  grid-row: 1/2;
+}
+
+.fa-envelope-open-text {
+  grid-row: 2/3;
+}
+
+.fa-instagram {
+  grid-row: 3/4;
+}
+
+.fa-facebook-square {
+  grid-row: 4/5;
+}
+
+.info {
+  grid-column: 2/3;
+  color: #6E7B9B;
+  font-size: 1rem;
+}
+
+.number {
+  grid-row: 1/2;
+}
+
+.email {
+  grid-row: 2/3;
+}
+
+.instagram {
+  grid-row: 3/4;
+}
+
+.facebook {
+  grid-row: 4/5;
+}
+
+.instagram a,
+.facebook a {
+  color: #6E7B9B;
+}
+
+.contact-info p {
+  margin-top: 10px;
+  padding: 30px 35px;
+  font-size: 1rem;
+  color: #6E7B9B;
+}
+
+/* Styling form */
+
+.form {
+  margin: 30px 35px;
+}
+
+.label {
+  color: #6E7B9B;
+  font-weight: bold;
+}
+
+.form-control {
+  border-color: #BCE0FD;
+  background-color: rgba(185, 209, 226, 0.2);
+}
+
+.btn {
+  border: none;
+  background-color: #6E7B9B;
+  width: 100%;
+  color: white;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 90% 10%;
+  padding: 10px 0;
   background-color: #B9D1E2;
 }
 
 footer ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-around;
   list-style: none;
 }
 
@@ -93,10 +290,19 @@ footer a {
   color: #6E7B9B;
 }
 
+.footer-nav {
+  grid-column: 1/2;
+}
+
+.copyright {
+  color: white;
+}
+
 .bi-arrow-up-square {
   margin-top: 3px;
   color: #6E7B9B;
   font-size: 1.4rem;
+  grid-column: 2/3;
 }
 
 .social {
@@ -110,6 +316,7 @@ footer a {
   color: white;
 }
 
-#social-icons {
-  justify-content: flex-end;
+#footer-icons {
+  color: white;
+  /*can't see the icons in the footer */
 }
