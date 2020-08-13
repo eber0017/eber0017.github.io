@@ -26,6 +26,3 @@ Using these methods I was able to overcome the challenges I faced.
 ### Frameworks
 - [Bootstrap](https://getbootstrap.com/docs/4.5/layout/overview/)
 - [Google Fonts](https://fonts.google.com/)
-
-### Pictures
-- [Unsplash](https://unsplash.com/)
