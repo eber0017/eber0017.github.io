@@ -31,6 +31,10 @@ HOME PAGE
   grid-row: 1/4;
 }
 
+.portfolio-link {
+  color: white;
+}
+
 .portfolio {
   align-self: end;
   grid-column: 2/3;
@@ -45,13 +49,17 @@ HOME PAGE
   border-radius: 5px;
 }
 
+.quote-section {
+  background-color: #B9D1E2;
+}
+
 .quote {
   width: 100%;
-  background-color: #B9D1E2;
   padding: 10px;
 }
 
 .quote p {
+  margin-top: 35px;
   color: #6E7B9B;
   font-size: 1rem;
   padding: 10px 50px;
@@ -276,6 +284,21 @@ CONTACT PAGE
   background-color: #6E7B9B;
   width: 100%;
   color: white;
+}
+
+/***************************
+ PORTFOLIO PAGE MOBILE VIEW 
+ ****************************/
+
+.wrapper {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.img {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .footer-sec {
@@ -504,6 +527,31 @@ HOME PAGE TABLET VIEW
     font-size: 1.5rem;
   }
 
+  /**************************
+  PORTFOLIO PAGE TABLET VIEW 
+  *****************************/
+
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(11, 1fr);
+  }
+
+  .img {
+    width: 50%;
+  }
+
+  .ux-ui {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .happy-trails {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+
 }
 
 /*************
@@ -516,14 +564,21 @@ DESKTOP VIEW
 HOME PAGE DESKTOP VIEW 
 ***********************/
 
+  .portfolio {
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+  }
+
   .quote {
+    width: 80%;
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
   }
 
   .logo {
-    width: 45%;
+    width: 35%;
   }
 
   /**********************
