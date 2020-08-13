@@ -290,11 +290,6 @@ CONTACT PAGE
  PORTFOLIO PAGE MOBILE VIEW 
  ****************************/
 
-.wrapper {
-  width: 95%;
-  margin: 0 auto;
-}
-
 .img {
   width: 100%;
   margin-top: 20px;
@@ -369,9 +364,6 @@ footer a {
  **************/
 
 @media (min-width: 576px) {
-
-  /* Styling Navigation */
-
 
 
   /********************
@@ -552,6 +544,7 @@ HOME PAGE DESKTOP VIEW
     margin-left: auto;
     margin-right: auto;
     width: 35%;
+    padding: 10px 25px;
   }
 
   .quote {
